@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Atual</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Verificador de Idade</h1>
+
+    </header>
+
+    <section>
+        <div> 
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="ano" id="txtano">
+
+            </p>
+
+            <p>
+                Sexo:
+                <!--O name se coloca igual para que o formulário entenda que não são coisas diferentes e que apenas um pode ser marcado, caso o name seja diferente sera permitido marcar mais de uma caixa ao mesmo tempo-->
+                <input type="radio" name="rsex" id="masc">
+                <label for="masc">Masculino</label>
+
+                <input type="radio" name="rsex" id="femi">
+                <label for="femi">Feminino</label>
+
+                <input type="radio" name="rsex" id="inde">
+                <label for="inde">Indeterminado</label>
+            </p>
+
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+
+                
+            </p>
+        </div>
+            
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+
+
+
+    </section>
+    
+    <footer>
+        <p style="font-size: 12pt;">&copy;anguemu</p>
+    </footer>
+
+    <script src="script.js">  </script>
+</body>
+</html>

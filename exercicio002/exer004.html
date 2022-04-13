@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOOM</title>
+
+    <style>
+        #area{
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 20px;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            
+
+        }
+
+        body{
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Função Java Script</h1>
+    <p>Conjunto de códigos que vão ser executadas apenas quando o evento ocorrer</p>
+    <h2>Blocos</h2>
+    <p>Para executar as linhas no momento que eu quero devemos montar um bloco, o bloco e fechado por chaves e declaramos uma ''function'' veja o código abaixo</p>
+
+    <div id="area">
+    interaja
+    </div>
+
+
+    
+    <script>
+
+        
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout',sair)
+
+
+        /* Bloco de função*/
+        function clicar(){
+            
+            a.innerText = 'Bobão quer chicletão'
+         
+            a.style.backgroundColor = 'red'
+            
+
+        }
+
+        function entrar(){
+            a.innerHTML = '<strong>UEPA!</strong>'
+            a.style.backgroundColor = 'green'
+        }
+
+        function sair(){
+            a.innerText = 'interaja'
+            a.style.backgroundColor = 'blue'
+        }
+
+    </script>
+    
+</body>
+</html>

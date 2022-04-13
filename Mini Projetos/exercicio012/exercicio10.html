@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <p id="titulo">Vamos Contar</p>
+
+    </header>
+
+    <section>
+        
+        <div>
+            <p>
+                Início: <input type="number" name="inicio" id="inicio">
+            
+            </p>
+            <p>
+                Fim: <input type="number" name="fim" id="fim">
+            </p>
+            <p>
+                Passo: <input type="number" name="passo" id="passo">
+            </p>
+        </div>
+
+        <div>
+            <input type="button" value="Contar" onclick="contar()">
+        </div>
+
+        <div id="contagem">
+
+            <p>Preparando contagem</p>
+        </div>
+
+    </section>
+    
+    <footer>
+        <p style="font-size: 12pt;">&copy;anguemu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<!--Ideia!
+    Poderia fazer o contador contar números negativos-->
+</html>
