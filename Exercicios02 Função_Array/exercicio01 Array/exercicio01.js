@@ -44,3 +44,4 @@ for(n in idade){
 console.log(idade.indexOf(10))
 //Não tem
 console.log(idade.indexOf(25))
+
